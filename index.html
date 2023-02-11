@@ -11,9 +11,8 @@
     })
       .done(function( data ) {
         if ( console && console.log ) {
-          //console.log( "Sample of data:", data.slice( 0, 100 ) );
-          
-          echo data;
+          console.log( "Sample of data:", data.slice( 0, 100 ) );
+          $("#apiContent").html(data.slice( 0, 100 ));
         }
       });
   </script>
@@ -28,4 +27,7 @@ Nav should contain
   AI papers
   Github repos
   Most importantly About and it should link to my page
+  
+  <div id="apiContent">
+  </div>
 </html>
