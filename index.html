@@ -77,19 +77,18 @@
 }
 
 .glassContainer{
-	background: rgba( 255, 255, 255, 0.25 );
-	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-	backdrop-filter: blur( 4px );
-	-webkit-backdrop-filter: blur( 4px );
-	border-radius: 10px;
-	border: 1px solid rgba( 255, 255, 255, 0.18 );
-	
 	padding: 1rem;
     margin-top: 15px;
+	background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur( 4px );
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
 }
 
 .glassContainerBg{
-	background-image: url(https://media1.giphy.com/media/JpScsr53qh6sR6dSeJ/giphy.gif);
+	/* background-image: url(https://i.gifer.com/X3DE.gif); */
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
 	background-size: cover;
@@ -125,7 +124,8 @@
 	list-style: none;
 	width: 20px;
 	height: 20px;
-	background: rgba(96, 183, 199, 0.1);
+	/*background: rgba(96, 183, 199, 0.1);*/
+	background: linear-gradient(#1845ad,#23a2f6);
 	animation: animate 25s linear infinite;
 	bottom: calc(-150px - 40vh);
 }
@@ -138,7 +138,8 @@
 	animation-duration: 20s;
 	border-radius: 50%;
 	border-top-left-radius: 0 !important;
-	background: rgba(47, 44, 92, 0.1);
+	/*background: rgba(47, 44, 92, 0.1);*/
+	background: linear-gradient(#1845ad,#23a2f6);
 }
 
 .circles li:nth-child(2) {
@@ -149,7 +150,8 @@
 	animation-duration: 25s;
 	border-radius: 50%;
 	border-top-left-radius: 0 !important;
-	background: rgba(96, 183, 199, 0.1);
+	/*background: rgba(96, 183, 199, 0.1);*/
+	background: linear-gradient(#1845ad,#23a2f6);
 }
 
 .circles li:nth-child(3) {
@@ -160,7 +162,8 @@
 	animation-duration: 20s;
 	border-radius: 50%;
 	border-top-left-radius: 0 !important;
-	background: rgba(47, 44, 92, 0.1);
+	/*background: rgba(47, 44, 92, 0.1);*/
+	background: linear-gradient(#1845ad,#23a2f6);
 }
 
 .circles li:nth-child(4) {
@@ -171,7 +174,8 @@
 	animation-duration: 15s;
 	border-radius: 50%;
 	border-top-left-radius: 0 !important;
-	background: rgba(114, 63, 145, 0.1);
+	/*background: rgba(114, 63, 145, 0.1);*/
+	background: linear-gradient(#1845ad,#23a2f6);
 }
 
 .circles li:nth-child(5) {
@@ -182,7 +186,8 @@
 	animation-duration: 20s;
 	border-radius: 50%;
 	border-top-left-radius: 0 !important;
-	background: rgba(96, 183, 199, 0.1);
+	/*background: rgba(96, 183, 199, 0.1);*/
+	background: linear-gradient(#1845ad,#23a2f6);
 }
 
 .circles li:nth-child(6) {
@@ -193,7 +198,8 @@
 	animation-duration: 25s;
 	border-radius: 50%;
 	border-top-left-radius: 0 !important;
-	background: rgba(114, 63, 145, 0.1);
+	/*background: rgba(114, 63, 145, 0.1);*/
+	background: linear-gradient(#1845ad,#23a2f6);
 }
 
 .circles li:nth-child(7) {
@@ -204,7 +210,8 @@
 	animation-duration: 30s;
 	border-radius: 50%;
 	border-top-left-radius: 0 !important;
-	background: rgba(47, 44, 92, 0.1);
+	/*background: rgba(47, 44, 92, 0.1);*/
+	background: linear-gradient(#1845ad,#23a2f6);
 }
 
 .circles li:nth-child(8) {
@@ -215,7 +222,8 @@
 	animation-duration: 35s;
 	border-radius: 50%;
 	border-top-left-radius: 0 !important;
-	background: rgba(114, 63, 145, 0.1);
+	/*background: rgba(114, 63, 145, 0.1);*/
+	background: linear-gradient(#1845ad,#23a2f6);
 }
 
 .circles li:nth-child(9) {
@@ -226,7 +234,8 @@
 	animation-duration: 40s;
 	border-radius: 50%;
 	border-top-left-radius: 0 !important;
-	background: rgba(47, 44, 92, 0.1);
+	/*background: rgba(47, 44, 92, 0.1);*/
+	background: linear-gradient(#1845ad,#23a2f6);
 }
 
 .circles li:nth-child(10) {
@@ -237,7 +246,8 @@
 	animation-duration: 45s;
 	border-radius: 50%;
 	border-top-left-radius: 0 !important;
-	background: rgba(96, 183, 199, 0.1);
+	/*background: rgba(96, 183, 199, 0.1);*/
+	background: linear-gradient(#1845ad,#23a2f6);
 }
 
 @keyframes animate {
@@ -246,11 +256,19 @@
 		opacity: 0;
 	}
 	50% {
-		transform: translateY(-60vh) rotate(360deg);
+		transform: translateY(-52vh) rotate(360deg);
+		opacity: .5;
+	}
+	75% {
+		transform: translateY(-78vh) rotate(720deg);
 		opacity: 1;
 	}
+	90% {
+		transform: translateY(-104vh) rotate(1080deg);
+		opacity: .5;
+	}
 	100% {
-		transform: translateY(-120vh) rotate(720deg);
+		transform: translateY(-130vh) rotate(1440deg);
 		opacity: 0;
 	}
 }
@@ -304,23 +322,23 @@
 	
 	
 	<div class="glassContainerBg">
-	
-		<ul class='circles'>
-		   <li></li>
-		   <li></li>
-		   <li></li>
-		   <li></li>
-		   <li></li>
-		   <li></li>
-		   <li></li>
-		   <li></li>
-		   <li></li>
-		   <li></li>
-		</ul>
-	
-	
 		<div class="glassContainer">
 			AI is the Elephant in the room...
+		</div>
+		
+		<div>
+			<ul class='circles'>
+			   <li></li>
+			   <li></li>
+			   <li></li>
+			   <li></li>
+			   <li></li>
+			   <li></li>
+			   <li></li>
+			   <li></li>
+			   <li></li>
+			   <li></li>
+			</ul>
 		</div>
 	</div>
 	
