@@ -1,28 +1,34 @@
 <script>
 	jQuery(document).ready(function () {
 		//Append class active navcurrent
+		//Append <span class="sr-only">(current)</span>
 		var url = window.location.href;
 		
 		console.log(url);
 		if(url.includes("tools"))
 		{
 			$(".nav_tools").addClass("active navcurrent");
+			$(".nav_tools_content").html('Tools<span class="sr-only">(current)</span>');
 		}
 		else if(url.includes("libraries"))
 		{
 			$(".nav_libraries").addClass("active navcurrent");
+			$(".nav_libraries_content").html('Libraries<span class="sr-only">(current)</span>');
 		}
 		else if(url.includes("resources"))
 		{
 			$(".nav_resources").addClass("active navcurrent");
+			$(".nav_resources_content").html('Resources<span class="sr-only">(current)</span>');
 		}
 		else if(url.includes("about"))
 		{
 			$(".nav_about").addClass("active navcurrent");
+			$(".nav_about_content").html('About<span class="sr-only">(current)</span>');
 		}
 		else
 		{
 			$(".nav_home").addClass("active navcurrent");
+			$(".nav_home_content").html('Home<span class="sr-only">(current)</span>');
 		}
 	}); 
 </script>
@@ -42,7 +48,7 @@
 	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 		<ul class="navbar-nav">
 		  <li class="nav-item nav_home">
-			<a class="nav-link nav_home_content" href="https://aiatoz.github.io/">Home<span class="sr-only">(current)</span></a>
+			<a class="nav-link nav_home_content" href="https://aiatoz.github.io/">Home</a>
 		  </li>
 		  <li class="nav-item nav_tools">
 			<a class="nav-link nav_tools_content" href="/pages/tools">Tools</a>
