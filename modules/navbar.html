@@ -4,7 +4,26 @@
 		var url = window.location.href;
 		
 		console.log(url);
-		alert("Test");
+		if(url.includes("tools"))
+		{
+			$(".nav_tools").addClass("active navcurrent");
+		}
+		else if(url.includes("libraries"))
+		{
+			$(".nav_libraries").addClass("active navcurrent");
+		}
+		else if(url.includes("resources"))
+		{
+			$(".nav_resources").addClass("active navcurrent");
+		}
+		else if(url.includes("about"))
+		{
+			$(".nav_about").addClass("active navcurrent");
+		}
+		else
+		{
+			$(".nav_home").addClass("active navcurrent");
+		}
 	}); 
 </script>
 
