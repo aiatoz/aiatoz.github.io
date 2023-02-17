@@ -3,12 +3,13 @@
 
 .body-bg{
 	color:white;
-	background-color: #000000!important;
+    background-color: #000000!important;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	padding-top: 0.7rem;
 	/*font-family: 'GothamPro';*/
-	font-weight: 200;
+    font-weight: 200;
+	/* overflow: hidden;  Hide scrollbars */
 }
 
 .navcurrent
@@ -17,47 +18,47 @@
 }
 
 .dropdown-menu {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	z-index: 1000;
-	display: none;
-	float: left;
-	min-width: 10rem;
-	padding: .5rem 0;
-	margin: .125rem 0 0;
-	font-size: 1rem;
-	color: #ffffff;
-	text-align: left;
-	list-style: none;
-	background-color: #161616;
-	background-clip: padding-box;
-	border: 1px solid rgba(0,0,0,.15);
-	border-radius: .25rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: left;
+    list-style: none;
+    background-color: #161616;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
 }
 
 .dropdown-item {
-	display: block;
-	width: 100%;
-	padding: .25rem 1.5rem;
-	clear: both;
-	font-weight: 400;
-	color: #b7b7b7;
-	text-align: inherit;
-	white-space: nowrap;
-	background-color: transparent;
-	border: 0;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #b7b7b7;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
 }
 
 .glassContainer{
 	padding: 1rem;
-    	margin-top: 15px;
+    margin-top: 15px;
 	background-color: rgba(255,255,255,0.13);
-    	border-radius: 10px;
-    	backdrop-filter: blur(4px);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur( 4px );
-    	border: 2px solid rgba(255,255,255,0.1);
-    	box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
 }
 
 .glassContainerBg{
@@ -71,10 +72,10 @@
 
 /*@keyframes animatedBackground {
   from {
-	background-position: 0 0;
+    background-position: 0 0;
   }
   to {
-	background-position: 100% 0;
+    background-position: 100% 0;
   }
 }*/
 
@@ -101,7 +102,7 @@
 	/*background: linear-gradient(#1845ad,#23a2f6);*/
 	background: linear-gradient(90deg, rgba(0,212,255,1) 26%, rgba(255,0,245,1) 89%);
 	background-size: 400% 400%;
-
+	
 	animation: animate 25s linear infinite;
 	bottom: calc(-150px - 40vh);
 }
@@ -275,19 +276,30 @@
 
 .glass-button {
 	margin-top: 10px;
-    	margin-right: 2px;
-    	padding-left: 1rem;
-    	padding-right: 1rem;
+    margin-right: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 	color: inherit;
 	font-size: revert;
-    	background-color: rgba(255,255,255,0.13);
-    	border-radius: 20px;
-    	backdrop-filter: blur(4px);
-    	-webkit-backdrop-filter: blur( 4px );
-    	border: 2px solid rgba(255,255,255,0.1);
-    	box-shadow: 0 0 40px rgb(8 7 16 / 60%);
- }
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur( 4px );
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgb(8 7 16 / 60%);
+}
 
- .glass-button:hover {
-   	background-color: rgba(255,255,255,0.2);
- }
+.glass-button:hover {
+   background-color: rgba(255,255,255,0.2);
+}
+
+.glassCard{
+	padding: 1rem;
+    margin-top: 15px;
+	background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur( 4px );
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
