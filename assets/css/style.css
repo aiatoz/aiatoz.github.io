@@ -252,21 +252,21 @@
 		opacity: 0;
 		background-position:0% 50%;
 	}
-	50% {
+	40% {
 		transform: translateY(-52vh) rotate(360deg);
 		opacity: .5;
 		background-position:100% 50%;
 	}
-	75% {
+	70% {
 		transform: translateY(-78vh) rotate(720deg);
 		opacity: 1;
 	}
 	90% {
-		transform: translateY(-104vh) rotate(1080deg);
-		opacity: .5;
+		transform: translateY(-115vh) rotate(1080deg);
+		opacity: .7;
 	}
 	100% {
-		transform: translateY(-130vh) rotate(1440deg);
+		transform: translateY(-140vh) rotate(1440deg);
 		opacity: 0;
 		background-position:0% 50%;
 	}
