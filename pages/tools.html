@@ -17,11 +17,8 @@
 
 <script>
 	jQuery(document).ready(function () {
-		jQuery(".container-wrap").append(
-			"<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>"
-		);
-		
 		$('#navigationModule').load( 'https://aiatoz.github.io/modules/navbar.html' );
+		$('#flyingElements').load( 'https://aiatoz.github.io/modules/flyingelements.html' );
 	}); 
 </script>
 
@@ -41,23 +38,6 @@
 			
 		</div>
 		
-		<!--Floating Circles animation-->
-		<div>
-			<ul class='circles'>
-			   <li></li>
-			   <li></li>
-			   <li></li>
-			   <li></li>
-			   <li></li>
-			   <li></li>
-			   <li></li>
-			   <li></li>
-			   <li></li>
-			   <li></li>
-			</ul>
-		</div>
-		<!--Floating Circles animation-->
-		
 		<!--Categories button-->
 		</br><h6>Categories</h6>
 		
@@ -73,6 +53,10 @@
 		<!--Categories button-->
 		
 	</div>
+	
+	<!--Floating Circles animation-->
+	<span id="flyingElements"></span>
+	<!--Floating Circles animation-->
+	
 </body>
-
 </html>
