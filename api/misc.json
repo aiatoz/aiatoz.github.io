@@ -1,19 +1,34 @@
 {
   [
     {
+      "name": "You.com",
+      "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+      "link": "https://you.com/"
+    },
+    {
+      "name": "BlackBox AI",
+      "desc": "An AI powered coding assistant that can make our lives easier",
+      "link": "https://www.useblackbox.io/"
+    },
+    {
+      "name": "Google Colab",
+      "desc": "Google Colab is a cloud-based platform for programming and data analysis that provides free access to a Jupyter notebook environment with pre-installed software and hardware acceleration. It allows users to write, run and share Python code and data analysis workflows, collaborate with others in real-time, and access powerful computing resources from anywhere with an internet connection. With Google Colab, users can leverage Google's infrastructure to run machine learning models, process large datasets, and accelerate research and development projects.",
+      "link": "https://colab.research.google.com/"
+    },
+    {
       "name": "Temp Mail",
-      "desc": "TempMail is an online Disposable Email Address (DEA) service, which means that it provides users with a temporary email address for current use. DEAs allow users to sign up for services and websites without revealing their true identity. With TempMail, users can create a unique email address that passes validity checks, helping them avoid spam and maintain their privacy.",
+      "desc": "Temp Mail is an online Disposable Email Address (DEA) service, which means that it provides users with a temporary email address for current use. DEAs allow users to sign up for services and websites without revealing their true identity. With TempMail, users can create a unique email address that passes validity checks, helping them avoid spam and maintain their privacy.",
       "link": "https://temp-mail.org/"
     },
     {
-      "name": "ABC",
-      "desc": "blah blah",
-      "link": "jhsgajhds"
+      "name": "Temp Number",
+      "desc": "Temp-Number.org is a website that provides temporary phone numbers for verification purposes. Users can receive SMS messages on the temporary number and avoid giving out their personal phone number. The website supports a wide range of countries and carriers, and users can choose from multiple numbers to receive their messages.",
+      "link": "https://temp-number.org/"
     },
     {
-      "name": "ABC",
-      "desc": "blah blah",
-      "link": "jhsgajhds"
+      "name": "AlternativeTo",
+      "desc": "AlternativeTo is a website that provides users with recommendations for software applications and services. Users can search for alternatives to popular software programs or browse through various categories to discover new tools. Each listed alternative includes a brief description, user reviews, and ratings. Additionally, users can contribute their own recommendations and reviews to help others find the best software for their needs. AlternativeTo aims to provide users with a platform to find high-quality software alternatives, promote competition and innovation, and encourage developers to build better software.",
+      "link": "https://alternativeto.net/"
     }
   ]
 }
