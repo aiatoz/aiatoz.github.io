@@ -58,7 +58,7 @@
         },
         {
             "name": "MyFashionAI",
-            "desc": "MyFashionAI is a system that helps the users to generate unlimited outfits from a single photo. ",
+            "desc": "MyFashionAI is a system that helps the users to generate unlimited outfits from a single photo. User's can upload the photos, select the required type of outfit, generate the image and download it through mail.",
             "category": "images",
             "logo": "https://www.myfashionai.com/images/logo.svg",
             "tags": "edit,fashion,images,prompt,diffusion",
