@@ -25,6 +25,11 @@
 			$(".nav_about").addClass("active navcurrent");
 			$(".nav_about_content").html('About<span class="sr-only">(current)</span>');
 		}
+		else if(url.includes("misc"))
+		{
+			$(".nav_misc").addClass("active navcurrent");
+			$(".nav_misc_content").html('Misc<span class="sr-only">(current)</span>');
+		}
 		else
 		{
 			$(".nav_home").addClass("active navcurrent");
@@ -68,6 +73,11 @@
 			  <a class="dropdown-item" href="/pages/resources/links">Links</a>
 			</div>
 		  </li>
+		  
+		  <li class="nav-item nav_misc">
+			<a class="nav-link nav_misc_content" href="/pages/misc">Misc</a>
+		  </li>
+			
 		  <li class="nav-item nav_about">
 			<a class="nav-link nav_about_content" href="/pages/about">About</a>
 		  </li>
