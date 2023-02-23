@@ -1,4 +1,5 @@
 {
+  "items":[
     {
       "name": "You.com",
       "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
@@ -29,4 +30,5 @@
       "desc": "AlternativeTo is a website that provides users with recommendations for software applications and services. Users can search for alternatives to popular software programs or browse through various categories to discover new tools. Each listed alternative includes a brief description, user reviews, and ratings. Additionally, users can contribute their own recommendations and reviews to help others find the best software for their needs. AlternativeTo aims to provide users with a platform to find high-quality software alternatives, promote competition and innovation, and encourage developers to build better software.",
       "link": "https://alternativeto.net/"
     }
+  ]
 }
