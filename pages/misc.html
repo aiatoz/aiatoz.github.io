@@ -20,6 +20,38 @@
 	jQuery(document).ready(function () {
 		$('#navigationModule').load( 'https://aiatoz.github.io/modules/navbar.html' );
 		$('#flyingElements').load( 'https://aiatoz.github.io/modules/flyingelements.html' );
+		
+		/* https://aiatoz.github.io/api/misc.json */
+		
+		
+		$.ajax({
+		  url: "https://aiatoz.github.io/api/misc.json",
+		  dataType: "json",
+		  success: function(data) {
+			// Loop through each item in the JSON data
+			$.each(data['items'], function(index, item) {
+			  // Get the name, description, and link from the JSON data
+			  var name = item.name;
+			  var desc = item.desc;
+			  var link = item.link;
+			  
+			  // Create a new HTML element to display the data
+			  var newItem = $('<div class="glassCard card">');
+			  newItem.append("<h6>"+ name + "</h6>");
+			  newItem.append("<p>" + desc + "</p>");
+			  newItem.append("<a href='" + link + "'>" + link + "</a>");
+			  
+			  // Add the new element to the page
+			  $(".CardSection").append(newItem);
+			});
+		  },
+		  error: function(jqXHR, textStatus, errorThrown) {
+			console.log(textStatus, errorThrown);
+		  }
+		});
+		
+		
+		
 	}); 
 </script>
 
@@ -34,54 +66,19 @@
 	
 	<div class="glassContainerBg container-fluid">
 	
-		<div class="glassContainer container-md">
+		<div class="glassContainer container-md" style="background-color: rgb(255 255 255 / 75%);color:black;">
 			<h5>Misc Tools</h5>	
 			<p>Listing out some of the most usefull free and paid tools(Not directly related to AI)</p>
 		</div>
 		
 		<!--Cards section-->
-		<!--<div class="glassCard card">
-			<div class="row">
-				<div class="col-sm-1">
-					<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_lS88YC8r3Y.json"  background="transparent"  speed="1"  class="w-100"  loop  autoplay></lottie-player>
-				</div>
-				<div class="col-sm">
-					<div class="card-block">
-						<h6>Title</h6>
-						<p>blah blah blah...</p> -->
-						<!--<br>
-						<a href="#" class="btn btn-primary btn-sm float-right">Read More</a>-->
-					<!--</div>
-				</div>
-			</div>
+		<span class="CardSection"></span>
+		<!--
+		<div class="glassCard card">
+			<h6>Title</h6>
+			<p>blah blah blah...</p>
+			<a>Link</a>
 		</div>-->
-		<!--Cards section-->
-		
-		<!--Cards section-->
-		<div class="glassCard card">
-			<h6>Title</h6>
-			<p>blah blah blah...</p>
-		</div>
-		
-		<div class="glassCard card">
-			<h6>Title</h6>
-			<p>blah blah blah...</p>
-		</div>
-		
-		<div class="glassCard card">
-			<h6>Title</h6>
-			<p>blah blah blah...</p>
-		</div>
-		
-		<div class="glassCard card">
-			<h6>Title</h6>
-			<p>blah blah blah...</p>
-		</div>
-		
-		<div class="glassCard card">
-			<h6>Title</h6>
-			<p>blah blah blah...</p>
-		</div>
 		<!--Cards section-->
 		
 	</div>
