@@ -39,9 +39,19 @@
 				  var desc = item.desc;
 				  var link = item.link;
 				  var category = item.category;
+				  var shrinkDesc = "";
+				  
+				  if(desc.length > 120){
+					shrinkDesc = desc.substr(0, 120) + "...";
+					shrinkDesc = shrinkDesc+"<a href='#' id="+name+">Read More</a>";
+				  }
+				  else
+				  {
+					shrinkDesc = desc;
+				  }
 				  
 				  // Create a new HTML element to display the data
-				  var block='<div class="col-sm-4"><div class="glassCard card3Pad card type_'+category+'"><h6>'+name+'</h6><p>'+desc+'</p><a class="itemLink" href="'+ link +'">'+link+'</a></div></div>';
+				  var block='<div class="col-sm-4"><div class="glassCard card3Pad card type_'+category+'"><h6>'+name+'</h6><p>'+shrinkDesc+'</p><a class="itemLink" href="'+ link +'">'+link+'</a></div></div>';
 				  
 				  // Add the new element to the page
 				  $(".CardSection").append(block);
