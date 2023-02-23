@@ -1,23 +1,53 @@
 {
   "images":[
               {
-                "name": "You.com",
-                "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+                "name": "DALL.E 2",
+                "desc": "DALL·E 2 is a state-of-the-art neural network developed by OpenAI that generates high-quality images from textual descriptions. It is an extension of the original DALL·E system that uses a 12-billion-parameter GPT-3 model for better performance. DALL·E 2 is capable of generating diverse and realistic images of various resolutions, including complex scenes with multiple objects and backgrounds. This technology has broad applications in fields such as design, entertainment, and art, where automated generation of high-quality images can significantly reduce costs and accelerate the creative process.",
                 "category":"images",
-                "link": "https://you.com/"
+				        "logo":"https://openai.com/content/images/2022/05/twitter-1.png",
+                "tags":"generative art,images,prompts,neural networks",
+                "link": "https://openai.com/dall-e-2/"
               },
               {
-                "name": "You.com",
-                "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+                "name": "Midjourney",
+                "desc": "Midjourney is an independent research lab that produces an artificial intelligence program under the same name that creates images from textual descriptions, similar to OpenAI's DALL-E and Stable Diffusion. It is speculated that the underlying technology is based on Stable Diffusion.",
                 "category":"images",
-                "link": "https://you.com/"
+				        "logo":"https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png",
+                "tags":"generative art,images,prompts,neural networks",
+                "link": "https://midjourney.com/"
               },
-              {
-                "name": "You.com",
-                "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+			  {
+                "name": "AI Image Enlarger",
+                "desc": "All-in-one AI toolkits help you enhance and upscale images. Provides tools such as AI based Enlarger, Enhancer, Upscalar, Sharpner,Background Remover, Denoiser, Colorizer etc.",
                 "category":"images",
-                "link": "https://you.com/"
-              }
+				        "logo":"https://imglarger.com/Images/Logo/v-logo-dark.png",
+                "tags":"images,enhancer,editor,tool",
+                "link": "https://imglarger.com/"
+              },
+			  {
+                "name": "Imagen by Google",
+                "desc": "Google's text-to-image AI model. Imagen builds on the power of large transformer language models in understanding text and hinges on the strength of diffusion models in high-fidelity image generation. Imagen achieves a new state-of-the-art FID score of 7.27 on the COCO dataset, without ever training on COCO, and human raters find Imagen samples to be on par with the COCO data itself in image-text alignment.<br><a href='https://arxiv.org/abs/2205.11487'>Research Paper</a>",
+                "category":"images",
+				        "logo":"NA",
+                "tags":"generative art,images,prompts,neural networks,text-to-image,diffusion",
+                "link": "https://imagen.research.google/"
+              },
+			  {
+                "name": "Face Swapper",
+                "desc": "Face Swapper uses artificial intelligence to detect faces on photos and replaces them with other faces of the user's choice. It will automatically reface the photos without reducing quality",
+                "category":"images",
+				        "logo":"NA",
+                "tags":"generative art,images,swap,edit,diffusion",
+                "link": "https://icons8.com/swapper"
+              },
+			  {
+                "name": "Ailiverse NeuCore",
+                "desc": "The Ultimate API solution for Computer Vision. It requires 90% fewer data points than other frameworks, while still achieving comparable accuracy. Available models are, Image Classification, Image Segmentation / Object Detection, Action Recognition, Deepfake Detection, Optical Character Recognition (OCR) etc",
+                "category":"images",
+				        "logo":"NA",
+                "tags":"computer vision, image classification, image segmentation / object detection, action recognition, deepfake detection, optical character recognition (OCR)",
+                "link": "https://www.ailiverse.com/"
+              },
   ],
   "audio":[
               {
