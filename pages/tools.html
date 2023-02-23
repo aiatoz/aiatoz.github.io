@@ -20,6 +20,38 @@
 	jQuery(document).ready(function () {
 		$('#navigationModule').load( 'https://aiatoz.github.io/modules/navbar.html' );
 		$('#flyingElements').load( 'https://aiatoz.github.io/modules/flyingelements.html' );
+		
+		
+		$.ajax({
+		  url: "https://aiatoz.github.io/api/tools.json",
+		  dataType: "json",
+		  success: function(data) {
+			// Loop through each item in the JSON data
+			console.log(data);
+			
+			
+			$.each(data, function(index, grp) {
+			  
+			  $.each(grp, function(i, item) {
+				  // Get the name, description, and link from the JSON data
+				  
+				  var name = item.name;
+				  var desc = item.desc;
+				  var link = item.link;
+				  var category = item.category;
+				  
+				  // Create a new HTML element to display the data
+				  var block='<div class="col-sm-4"><div class="glassCard card3Pad card type_'+category+'"><h6>'+name+'</h6><p>'+desc+'</p><a class="itemLink" href="'+ link +'">'+link+'</a></div></div>';
+				  
+				  // Add the new element to the page
+				  $(".CardSection").append(block);
+			  });
+			});
+		  },
+		  error: function(jqXHR, textStatus, errorThrown) {
+			console.log(textStatus, errorThrown);
+		  }
+		});
 	}); 
 </script>
 
@@ -42,59 +74,27 @@
 		<!--Categories button-->
 		</br><h6>Categories</h6>
 		
+		<button class="glass-button">All</button>
 		<button class="glass-button">Image</button>
-		<button class="glass-button">Image</button>
-		<button class="glass-button">Image</button>
-		<button class="glass-button">Image</button>
-		<button class="glass-button">Image</button>
-		<button class="glass-button">Image</button>
-		<button class="glass-button">Image</button>
-		<button class="glass-button">Image</button>
-		<button class="glass-button">Image</button>
+		<button class="glass-button">Video</button>
+		<button class="glass-button">Audio</button>
+		<button class="glass-button">Text</button>
+		<button class="glass-button">Misc</button>
 		<!--Categories button-->
 		
 		<!--Cards section-->
-		<!--<div class="glassCard card">
-			<div class="row">
-				<div class="col-sm-1">
-					<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_lS88YC8r3Y.json"  background="transparent"  speed="1"  class="w-100"  loop  autoplay></lottie-player>
-				</div>
-				<div class="col-sm">
-					<div class="card-block">
+		<div class="container-fluid">
+			<div class="CardSection row">
+			
+				<!--<div class="col-sm-4">
+					<div class="glassCard card3Pad card">
 						<h6>Title</h6>
-						<p>blah blah blah...</p> -->
-						<!--<br>
-						<a href="#" class="btn btn-primary btn-sm float-right">Read More</a>-->
-					<!--</div>
-				</div>
+						<p>blah blah blah...</p>
+						<a>Link</a>
+					</div>
+				</div>-->
+				
 			</div>
-		</div>-->
-		<!--Cards section-->
-		
-		<!--Cards section-->
-		<div class="glassCard card">
-			<h6>Title</h6>
-			<p>blah blah blah...</p>
-		</div>
-		
-		<div class="glassCard card">
-			<h6>Title</h6>
-			<p>blah blah blah...</p>
-		</div>
-		
-		<div class="glassCard card">
-			<h6>Title</h6>
-			<p>blah blah blah...</p>
-		</div>
-		
-		<div class="glassCard card">
-			<h6>Title</h6>
-			<p>blah blah blah...</p>
-		</div>
-		
-		<div class="glassCard card">
-			<h6>Title</h6>
-			<p>blah blah blah...</p>
 		</div>
 		<!--Cards section-->
 		
