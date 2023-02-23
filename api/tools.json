@@ -1,5 +1,48 @@
 {
-  "site": "ABC",
-  "desc": "blah blah",
-  "link": "jhsgajhds"
+  "images":[
+              {
+                "name": "You.com",
+                "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+                "link": "https://you.com/"
+              },
+              {
+                "name": "You.com",
+                "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+                "link": "https://you.com/"
+              },
+              {
+                "name": "You.com",
+                "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+                "link": "https://you.com/"
+              }
+  ],
+  "audio":[
+              {
+                "name": "You.com",
+                "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+                "link": "https://you.com/"
+              },
+              {
+                "name": "You.com",
+                "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+                "link": "https://you.com/"
+              },
+              {
+                "name": "You.com",
+                "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+                "link": "https://you.com/"
+              }
+  ],
+  "text":[
+              {
+                "name": "You.com",
+                "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+                "link": "https://you.com/"
+              },
+              {
+                "name": "You.com",
+                "desc": "You.com is a search engine that values user privacy and provides a curated list of the best parts of the internet. With non-intrusive ads and an AI-powered search engine, You.com ensures that the users will receive the most relevant results from the web and apps. The platform allows to prioritize and sort the search results for an optimum search experience. You.com believes in empowering users to control their search results, privacy, and time. <br>The best part is their code search",
+                "link": "https://you.com/"
+              }
+  ]
 }
