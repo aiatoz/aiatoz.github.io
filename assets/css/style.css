@@ -331,3 +331,7 @@
 .whiteGlassText{
     font-weight: 400;
 }
+
+.card3pad{
+    margin-top: 25px !important;
+}
