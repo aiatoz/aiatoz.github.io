@@ -17,50 +17,54 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
 <script>
+	var globalData = null;
+	
 	jQuery(document).ready(function () {
 		$('#navigationModule').load( 'https://aiatoz.github.io/modules/navbar.html' );
 		$('#flyingElements').load( 'https://aiatoz.github.io/modules/flyingelements.html' );
 		
-		
 		$.ajax({
-		  url: "https://aiatoz.github.io/api/tools.json",
-		  dataType: "json",
-		  success: function(data) {
-			// Loop through each item in the JSON data
-			console.log(data);
-			
-			
-			$.each(data, function(index, grp) {
-			  
-			  $.each(grp, function(i, item) {
-				  // Get the name, description, and link from the JSON data
-				  
-				  var name = item.name;
-				  var desc = item.desc;
-				  var link = item.link;
-				  var category = item.category;
-				  var shrinkDesc = "";
-				  
-				  if(desc.length > 120){
-					shrinkDesc = desc.substr(0, 120) + "...";
-					shrinkDesc = shrinkDesc+"<a href='#' id="+name+">Read More</a>";
-				  }
-				  else
-				  {
-					shrinkDesc = desc;
-				  }
-				  
-				  // Create a new HTML element to display the data
-				  var block='<div class="col-sm-4"><div class="glassCard card3Pad card type_'+category+'"><h6>'+name+'</h6><p>'+shrinkDesc+'</p><a class="itemLink" href="'+ link +'">'+link+'</a></div></div>';
-				  
-				  // Add the new element to the page
-				  $(".CardSection").append(block);
-			  });
-			});
-		  },
-		  error: function(jqXHR, textStatus, errorThrown) {
-			console.log(textStatus, errorThrown);
-		  }
+			url: "https://aiatoz.github.io/api/tools.json",
+			dataType: "json",
+			success: function(data) 
+			{
+				// Loop through each item in the JSON data
+				console.log(data);
+				globalData = data;
+				
+				$.each(data, function(index, grp)
+				{
+					//Grp based
+					$.each(grp, function(i, item) 
+					{
+						//Item based
+						var name = item.name;
+						var desc = item.desc;
+						var link = item.link;
+						var category = item.category;
+						var shrinkDesc = "";
+						
+						//Setting Readmore link
+						if(desc.length > 120){
+							shrinkDesc = desc.substr(0, 120) + "...";
+							shrinkDesc = shrinkDesc+"<a href='#' id="category+"_"+name+">Read More</a>";
+						}
+						else
+						{
+							shrinkDesc = desc;
+						}
+						
+						// Create a new HTML element to display the data
+						var block='<div class="col-sm-4"><div class="glassCard card3Pad card type_'+category+'"><h6>'+name+'</h6><p>'+shrinkDesc+'</p><a class="itemLink" href="'+ link +'">'+link+'</a></div></div>';
+						
+						// Add the new element to the page
+						$(".CardSection").append(block);
+					});
+				});
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log(textStatus, errorThrown);
+			}
 		});
 	}); 
 </script>
