@@ -55,7 +55,7 @@
 						}
 						
 						// Create a new HTML element to display the data
-						var block='<div id="div_'+category+'_'+name+'" class="col-sm-4"><div class="glassCard card3Pad card type_'+category+'"><h6>'+name+'</h6><p>'+shrinkDesc+'</p><a class="itemLink" href="'+ link +'">'+link+'</a></div></div>';
+						var block='<div id="div_'+category+'_'+name+'" class="col-sm-4 dataBlock" data-toggle="modal" data-target="#exampleModalCenter"><div class="glassCard card3Pad card type_'+category+'"><h6>'+name+'</h6><p>'+shrinkDesc+'</p><a class="itemLink" href="'+ link +'">'+link+'</a></div></div>';
 						
 						// Add the new element to the page
 						$(".CardSection").append(block);
@@ -66,6 +66,17 @@
 				console.log(textStatus, errorThrown);
 			}
 		});
+		
+		//ModalOpen - content change
+		$("body").on("click", ".dataBlock", function(e) {
+		   console.log(this.id);
+		   var divID = this.id;
+		   var cName = divID.split("_")[1];
+		   var iName = divID.split("_")[2];
+		   
+		   console.log(cName+","+iName);
+		})
+		
 	}); 
 </script>
 
