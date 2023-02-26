@@ -395,6 +395,7 @@
 .modalLogo
 {
     padding: 0px;
+	border-radius: 0.7rem;
 }
 
 .modalLogoContainer
