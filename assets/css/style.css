@@ -377,3 +377,17 @@
 .modal-footer{
 	border-top: 0px !important;
 }
+
+.modalCloseBtn{
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #d1d1d1;
+    /* text-shadow: 0 1px 0 #fff; */
+    opacity: .5;
+}
+
+.modalCloseBtn:hover {
+     color: #ffffff;
+}
