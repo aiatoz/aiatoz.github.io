@@ -47,7 +47,7 @@
 						//Setting Readmore link
 						if(desc.length > 120){
 							shrinkDesc = desc.substr(0, 120) + "...";
-							shrinkDesc = shrinkDesc+"<a href='#' id='"+category+"_"+name+"'>Read More</a>";
+							shrinkDesc = shrinkDesc+"<a href='#exampleModalCenter' id='"+category+"_"+name+"' data-toggle='modal' data-target='#exampleModalCenter'>Read More</a>";
 						}
 						else
 						{
@@ -55,7 +55,7 @@
 						}
 						
 						// Create a new HTML element to display the data
-						var block='<div class="col-sm-4"><div class="glassCard card3Pad card type_'+category+'"><h6>'+name+'</h6><p>'+shrinkDesc+'</p><a class="itemLink" href="'+ link +'">'+link+'</a></div></div>';
+						var block='<div id="div_'+category+'_'+name+'" class="col-sm-4"><div class="glassCard card3Pad card type_'+category+'"><h6>'+name+'</h6><p>'+shrinkDesc+'</p><a class="itemLink" href="'+ link +'">'+link+'</a></div></div>';
 						
 						// Add the new element to the page
 						$(".CardSection").append(block);
@@ -117,6 +117,35 @@
 	<!--Floating Circles animation-->
 	<span id="flyingElements"></span>
 	<!--Floating Circles animation-->
+	
+	
+	
+	
+	
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<!--button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>-->
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	
+	
+	
 	
 </body>
 </html>
