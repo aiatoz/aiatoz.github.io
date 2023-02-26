@@ -369,3 +369,11 @@
 	margin-left: 0.25rem;
     margin-right: 0.25rem;
 }
+
+.modal-header{
+	border-bottom: 0px !important;
+}
+
+.modal-footer{
+	border-top: 0px !important;
+}
