@@ -391,3 +391,16 @@
 .modalCloseBtn:hover {
      color: #ffffff;
 }
+
+.modalLogo
+{
+    padding: 0px;
+}
+
+.modalLogoContainer
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	border-radius: border-radius: 5%;
+	margin-bottom: 1rem;
+}
