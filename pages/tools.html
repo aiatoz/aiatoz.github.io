@@ -69,12 +69,28 @@
 		
 		//ModalOpen - content change
 		$("body").on("click", ".dataBlock", function(e) {
-		   console.log(this.id);
-		   var divID = this.id;
-		   var cName = divID.split("_")[1];
-		   var iName = divID.split("_")[2];
+		    //console.log(this.id);
+		    var divID = this.id;
+		    var cName = divID.split("_")[1];
+		    var iName = divID.split("_")[2];
+		    
+		    console.log(cName+","+iName);
 		   
-		   console.log(cName+","+iName);
+		    $.each(globalData[cName], function(cindex, iData) 
+			{
+				if(iData['name']==iName)
+				{
+					console.log(iData);
+					
+					//dataModalContent
+					//dataModalTitle
+					$(".dataModalTitle").text(iData['name']);
+					console.log(iData['link']);
+					$(".dataModalContent").html('<p>'+iData['desc']+'</p>Link : <a class="itemLink" href="'+iData['link']+'">'+iData['link']+'</a>');
+					
+					return false;//break;
+				}
+			});
 		})
 		
 	}); 
@@ -138,13 +154,13 @@
 	  <div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content modalCard">
 		  <div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+			<h5 class="modal-title dataModalTitle" id="exampleModalLongTitle">Modal title</h5>
 			<button type="button" class="close modalCloseBtn" data-dismiss="modal" aria-label="Close">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 		  </div>
 		  <div class="modal-body">
-			...
+			<span class="dataModalContent"></span>
 		  </div>
 		  <div class="modal-footer">
 		  </div>
