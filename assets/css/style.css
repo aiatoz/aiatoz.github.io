@@ -361,7 +361,7 @@
     margin-top: 15px;
     background-color: rgb(75 75 75 / 50%);
     border-radius: 10px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur( 4px );
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgb(8 7 16 / 60%);
