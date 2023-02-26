@@ -341,7 +341,7 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-     background: #888; 
+     background: #383838; 
      border-radius:20px;
 }
 
