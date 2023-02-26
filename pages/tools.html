@@ -81,12 +81,15 @@
 				if(iData['name']==iName)
 				{
 					console.log(iData);
-					
+					var imgSec = null;
+					if(iData['logo']!='NA')
+						imgSec = '<div class="container-fluid" style="padding-right: 0px;padding-left: 0px;"><img src="'+iData['logo']+'" alt="Avatar" style="border-radius: 5%;width: 26.7rem;margin-bottom: 1rem;"></img></div>';
+					else
+						imgSec = "";
 					//dataModalContent
 					//dataModalTitle
 					$(".dataModalTitle").text(iData['name']);
-					console.log(iData['link']);
-					$(".dataModalContent").html('<p>'+iData['desc']+'</p>Link : <a class="itemLink" href="'+iData['link']+'">'+iData['link']+'</a>');
+					$(".dataModalContent").html(imgSec+'<p>'+iData['desc']+'</p>Link : <a class="itemLink" href="'+iData['link']+'">'+iData['link']+'</a>');
 					
 					return false;//break;
 				}
