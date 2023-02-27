@@ -82,7 +82,9 @@
 				{
 					console.log(iData);
 					var imgSec = null;
-					if(iData['logo']!='NA')
+					if(typeof iData['logo'] === "undefined")
+						imgSec = "";
+					else if(iData['logo']!='NA')
 						imgSec = '<div class="container modalLogoContainer"><img src="'+iData['logo']+'" alt="Avatar" class="container-fluid modalLogo"></img></div>';
 					else
 						imgSec = "";
