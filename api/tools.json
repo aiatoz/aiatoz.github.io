@@ -4,7 +4,7 @@
             "name": "DALL.E 2",
             "desc": "DALL·E 2 is a state-of-the-art neural network developed by OpenAI that generates high-quality images from textual descriptions. It is an extension of the original DALL·E system that uses a 12-billion-parameter GPT-3 model for better performance. DALL·E 2 is capable of generating diverse and realistic images of various resolutions, including complex scenes with multiple objects and backgrounds. This technology has broad applications in fields such as design, entertainment, and art, where automated generation of high-quality images can significantly reduce costs and accelerate the creative process.",
             "category": "images",
-            "logo": "https://openai.com/content/images/2022/05/twitter-1.png",
+            "logo": "https://global.discourse-cdn.com/business7/uploads/openai1/original/1X/5359595287f16818a5af20419db97afb0a6eedc7.jpeg",
             "tags": "generative art,images,prompts,neural networks",
             "link": "https://openai.com/dall-e-2/"
         },
